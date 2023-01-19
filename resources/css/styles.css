@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(/resources/images/fondo1.jpg);
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: rgb(13, 54, 149);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+  
+nav li:last-child {
+    padding-right: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 56px;
+    padding: 15px;
+    color: #0c320f;
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 34px;
+    padding: 2px;
+    text-transform: uppercase;
+    background-color: #8cd392;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: bolder;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 70px;
+    font-weight: 500;
+    line-height: 2.7;
+    letter-spacing: 0.8px;
+}
+
+th {
+    border: 3px solid #215a26;
+    border-radius: 15%;
+}
+  
+table {
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 250px;
+}
+  
+td {
+    border: 2px solid #215a26;
+    width: 300px;
+    border-radius: 15%;
+}
+  
+footer {
+    margin-top: 650px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    /*position: fixed;*/
+    width: 100%;
+    bottom: 5px;
+    background-color: rgb(222, 147, 36);
+    z-index: 4;
+}
+
+/*footer h3 {
+    display: inline;
+    font-size: 14px;
+    background-color: #8cd392;
+}*/
+    
+.repository {
+    max-width: 940px;
+    margin: 0 auto;
+    height: 800px;
+}
+  
+.left {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: rgb(1, 60, 23);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: rgb(1, 60, 23);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+footer .button {
+    padding: 1.25rem 3.75rem;
+    border-radius: 4px;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+footer a {
+    color: #0c320f;
+    font-size: 25px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 990px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    header .logo-big {
+      display: none;
+    }
+  
+    header .logo-small {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    header {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+ }
+}
